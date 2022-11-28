@@ -14,14 +14,63 @@
     
     <main>
         
-        <div class="card">
-            
-            <input type="text" id="km" placeholder="Inserisci il numero di km" required>
-            <input type="text" id="età" placeholder="Inserisci la tua età" required>
-            <button id="genera">Genera</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-full">
+                    <img src="./img/train.png" alt="treno">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col margin-sides-20">
+                    <label for="nome" class="font-size-16">Nome e Cognome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci il nome e il tuo cognome" required>
+                </div>
+                <div class="col margin-sides-20">
+                    <label for="km" class="font-size-16">Km da percorrere</label>
+                    <input type="text" id="km" name="km" placeholder="Inserisci il numero di km" required>
+                </div>
+                <div class="col margin-sides-20">
+                    <label for="eta" class="font-size-16">La tua età</label>
+                    <input type="text" id="eta" name="eta" placeholder="Inserisci la tua età" required>
+                </div>
 
-            <p id="prezzo-biglietto"></p>
+            </div>
+            <div class="row">
+                <div class="col-full">
+                    <div>
+                        <button id="genera">Genera</button>
+                        <button id="annulla">Annulla</button>
+                    </div>
+                </div>
+            </div>
 
+           
+
+        </div>
+
+        <div class="container-piccolo">
+            <div class="row">
+                <div class="col-grande">
+                    <p class="bold">Nome Passeggero</p>
+                    <p id="nome-passeggero" class="font-size-20"></p>
+                </div>
+                <div class="col-piccola">
+                    <p class="bold">Offerta</p>
+                    <p id="offerta" class="font-size-20"></p>
+                </div>
+                <div class="col-piccola">
+                    <p class="bold">Carrozza</p>
+                    <p id="carrozza" class="font-size-20"></p>
+                </div>
+                <div class="col-piccola">
+                    <p class="bold">Codice CP</p>
+                    <p id="codice-cp" class="font-size-20"></p>
+                </div>
+                <div class="col-piccola">
+                    <p class="bold">Costo biglietto</p>
+                    <p id="prezzo-biglietto" class="font-size-20"></p>
+                </div>
+            </div>
         </div>
 
     </main>
